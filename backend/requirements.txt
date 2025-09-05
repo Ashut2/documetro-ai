@@ -1,0 +1,42 @@
+# Core FastAPI framework
+fastapi
+
+# ASGI server to run FastAPI
+uvicorn[standard]
+
+# Database ORM (SQLAlchemy) + driver
+sqlalchemy
+psycopg2-binary   # if using PostgreSQL
+# or
+# sqlite (comes built-in with Python, no need to install separately)
+
+# For data validation & models
+pydantic
+
+# File uploads / form-data parsing
+python-multipart
+
+# Optional - environment variables handling
+python-dotenv
+
+# Optional - async HTTP requests (if calling external APIs for notifications etc.)
+httpx
+
+
+
+# fastapi → main web framework
+
+# uvicorn[standard] → runs the FastAPI app with hot reload & optimizations
+
+# sqlalchemy → ORM for database handling
+
+# psycopg2-binary → PostgreSQL driver (skip if you only use SQLite)
+
+# pydantic → request/response validation
+
+# python-multipart → enables file uploads (UploadFile)
+
+# python-dotenv → manage secrets/config via .env file
+
+# httpx → async HTTP client (useful for external APIs, webhooks, notifications)
+

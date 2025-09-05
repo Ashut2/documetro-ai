@@ -1,0 +1,20 @@
+⚠️ Why this happens
+
+When you installed packages (uvicorn, fastapi, etc.), the executables (uvicorn.exe, httpx.exe, etc.) were placed in:
+
+C:\Users\a\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\Scripts
+
+
+But that folder is not in your PATH.
+So when you type uvicorn in the terminal, Windows won’t find it.
+
+✅ Fix options
+Option 1: Run with Python module (no PATH change needed)
+
+Instead of typing uvicorn ..., always run:
+
+python -m uvicorn app.main:app --reload
+
+
+This works because Python will find uvicorn inside your environment.
+👉 Easiest and safest.
