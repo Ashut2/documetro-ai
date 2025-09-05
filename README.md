@@ -9,7 +9,7 @@ Document Intelligence System for SIH - OCR ,NLP, Search &amp; Notifications
 - GET / → Health check
 
 ### How to Run
-uvicorn main:app --reload
+python -m uvicorn main:app --reload
 
 ### Notes
 - Files are stored in `uploads/`
